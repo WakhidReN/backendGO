@@ -76,7 +76,6 @@ func assets(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 
-		// Menuliskan respons sebagai array JSON
 		result, err := json.Marshal(assets)
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
